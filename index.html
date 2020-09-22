@@ -3,20 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-    <title>邀请</title>
+    <title>封面</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/invite.css?v=2">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/museum.css">
     <script src="./js/flexible.js"></script>
 </head>
 <body>
     <div class="container">
         <img src="./images/index.jpg" width="100%" alt="">
-        <div class="flex between">
+        <!-- <div class="flex between">
             <div class="left">left</div>
             <div class="right">right</div>
-        </div>
+        </div> -->
     </div>
-    
-    <script src="./js/invite.js"></script>
+    <div class="content">
+        <img src="http://www.jq22.com/img/cs/500x300-1.png">
+        <img src="http://www.jq22.com/img/cs/500x300-2.png">
+        <img src="http://www.jq22.com/img/cs/500x300-3.png">
+        <img src="http://www.jq22.com/img/cs/500x300-4.png">
+    </div>
+
+    <script>
+        
+    </script>
+
+    <script type="text/javascript" src="./js/jquery/jquery.js"></script>
+    <script type="text/javascript" src="./js/jquery.qrcode.min.js"></script>
+    <script type="text/javascript" src="./js/utils.js"></script>
+    <script type="text/javascript" src="./js/LoopSlider.js"></script>
+
+    <script>
+        $(function(){
+            console.log(utils.getHref())
+            // 轮播
+            LoopSlider.init({
+                el: ".content", //选择器
+                navigator: {
+                    //前进后退按钮
+                    prevEl: ".prev",
+					nextEl: ".next"
+                },
+                easing: "ease", //动画效果cubic-bezier(0.985, -0.060, 0.000, 1.320)
+                duration: 300, //过渡时间，默认为3000ms,
+                autoplay: 3000, //boolean 和 number 设置为true 默认延时为3s,如果设置为1000，延时为1s
+            })
+
+            // 二维码
+            $('#output').qrcode({
+                render:"canvas",//设置渲染方式 （有两种方式 table和canvas，默认是canvas）  
+                width: 150,//宽度
+                height: 150,//高度
+                correctLevel:0,//纠错等级  
+                text: utils.getHref(),//生成二维码的文本
+                // background  : "#ffffff",//背景颜色    
+                // foreground  : "#000000" //前景颜色  
+            });
+
+        })
+    </script>
 </body>
 </html>

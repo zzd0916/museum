@@ -11,24 +11,18 @@
 </head>
 <body>
     <div class="container">
-        <img src="./images/img/foreword2.jpg" width="100%" alt="">
+        <img src="./images/img/foreword2.jpg" id="foreword2" width="100%" alt="">
     </div>
+    
     
     <script type="text/javascript" src="./js/jquery/jquery.js"></script>
     <script type="text/javascript" src="./js/jquery.qrcode.min.js"></script>
     <script type="text/javascript" src="./js/utils.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
 
     <script>
-        $(function(){
-            $('#output').qrcode({
-                render:"canvas",//设置渲染方式 （有两种方式 table和canvas，默认是canvas）  
-                width: 150,//宽度
-                height: 150,//高度
-                correctLevel:0,//纠错等级  
-                text: utils.getHref(),//生成二维码的文本
-                // background  : "#ffffff",//背景颜色    
-                // foreground  : "#000000" //前景颜色  
-            });
+        $('#foreword2').on('click', () => {
+            window.location.href = './section_1.html';
         })
     </script>
 </body>

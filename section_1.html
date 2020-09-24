@@ -1,27 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background: #901d22;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-    <title>封面</title>
+    <title>第一单元: 闻令而动 精准施策</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/museum.css">
     <script src="./js/flexible.js"></script>
 </head>
 <body>
-    <div class="container cover">
-        <div class="cover-header">
-            <h2 class="title">四川抗击新冠肺炎疫情专题展</h2>
+    <div class="container section-1" >
+        <div class="header">
+            <div class="title"></div>
         </div>
         <div class="content">
-            <img src="./images/img/cover_img_1.jpg">
-            <img src="./images/img/cover_img_2.jpg">
-            <img src="./images/img/cover_img_1.jpg">
-            <img src="./images/img/cover_img_2.jpg">
+            <p class="p">疫情就是命令，防控就是责任。省委、省政府坚决贯彻落实习近平总书记系列重要指示精神和党中央、国务院决策部署，闻令而动、快速出击，立足全国“一盘棋”，织密省市县乡村的联防联控“一张网”，开展全方位的人力组织战、物资保障战、科技突击战、资源运动战，率先实施差异化防控策略，科学阻断病毒传播链条， 统筹推进疫情防控和经济社会发展。</p>
         </div>
-        <div class="cover-footer">
-            <div class="qr-box">
+        <div class="footer">
+            <div class="qr-box-c">
                 <div id="qrcode"></div>
                 <div class="text">扫一扫立即观看</div>
             </div>
@@ -32,22 +29,8 @@
     <script type="text/javascript" src="./js/jquery.qrcode.min.js"></script>
     <script type="text/javascript" src="./js/utils.js"></script>
     <script type="text/javascript" src="./js/common.js"></script>
-    <script type="text/javascript" src="./js/LoopSlider.js"></script>
 
     <script>
-        // 轮播
-        LoopSlider.init({
-            el: ".content", //选择器
-            navigator: {
-                //前进后退按钮
-                prevEl: ".prev",
-                nextEl: ".next"
-            },
-            easing: "ease", //动画效果cubic-bezier(0.985, -0.060, 0.000, 1.320)
-            duration: 300, //过渡时间，默认为3000ms,
-            autoplay: 3000, //boolean 和 number 设置为true 默认延时为3s,如果设置为1000，延时为1s
-        })
-
         // 二维码
         $('#qrcode').qrcode({
             render:"canvas",//设置渲染方式 （有两种方式 table和canvas，默认是canvas）  
@@ -58,11 +41,6 @@
             // background  : "#f5f5f5",//背景颜色    
             // foreground  : "#000000" //前景颜色  
         });
-
-        $('.content img').on('click', () => {
-            window.location.href = './forword_1.html';
-        })
-
     </script>
 </body>
 </html>

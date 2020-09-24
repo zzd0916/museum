@@ -1,0 +1,171 @@
+/* ================== cover  =======================*/
+.cover-header {
+    position: relative;
+    width: 10rem;
+    height: 4.1296rem;
+    background: url('../images/bg/cover_bg_header.jpg') no-repeat;
+    background-size: 100%;
+}
+.cover-header .title {
+    position: absolute;
+    bottom: 0.5556rem;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.5556rem;
+    color: #fbdaa5;
+}
+.cover-footer {
+    position: relative;
+    width: 10rem;
+    height: 4.7593rem;
+    background: url('../images/bg/cover_bg_footer.jpg') no-repeat;
+    background-size: 100%;
+}
+.cover-footer .qr-box {
+    position: absolute;
+    width: 2.713rem;
+    height: 3.0278rem;
+    top: 0.9259rem;
+    right: 0.6852rem;
+    background: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 0.0463rem;
+}
+.qr-box-c {
+    width: 1.4815rem;
+    height: 1.6111rem;
+    background: #fff;
+    padding: 0.0926rem;
+}
+.qr-box  canvas {
+    width: 100%;
+    height: 100%;
+}
+.qr-box-c  canvas {
+    width: 100%;
+    height: 100%;
+}
+.qr-box .text {
+    text-align: center;
+    font-size: 0.1111rem;
+    color: #000;
+    margin-top: 0.0926rem;
+    font-weight: bold;
+}
+.qr-box-c .text {
+    text-align: center;
+    font-size: 0.0926rem;
+    color: #000;
+    margin-top: 0.0463rem;
+}
+/* ================== cover 轮播 =======================*/
+.cover .content {
+	/* 给定容器宽高度 */
+	width: 10rem;
+	overflow: hidden;
+	height: 8.8981rem;
+	position: relative;
+	margin: 0 auto;
+	background-color: #ccc;
+}
+img {
+	height: 100%;
+	width: 100%;
+}
+.points {
+    position: absolute;
+    z-index: 5;
+    list-style: none;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0.3704rem;
+    left: 40%;
+    height: 0.1852rem;
+    right: 40%;
+}
+.points li {
+	cursor: pointer;
+	display: inline-block;
+	width: 0.2407rem;
+    height: 0.2407rem;
+    margin-right: 0.1389rem;
+	border-radius: 50%;
+    background: none;
+    border: 3px solid #fff;
+}
+.points li:last-child {
+    margin-right: 0;
+}
+.points li.active {
+    background:#deb222 !important;
+    border: 3px solid #deb222;
+}
+/* .prev {
+    border-radius: 0 0.2778rem 0.2778rem 0;
+}
+.next,
+.prev {
+    appearance: menu;
+    margin: 0 auto;
+    width: 0.3704rem;
+    display: block;
+    float: left;
+    height: 0.3704rem;
+    position: absolute;
+	line-height: 0.3704rem;
+	text-align: center;
+	font-family: "宋体";
+	color: aliceblue;
+    z-index: 999;
+    background-color: hsla(0,0%,0%,0.1);
+    top: 45%;
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+.next {
+	right: 0rem;
+	border-radius: 0.2778rem 0 0 0.2778rem;
+}
+.prev:hover{background-color: hsla(0,0%,0%,0.5);}
+.next:hover{background-color: hsla(0,0%,0%,0.5);} */
+
+/* ================== section1  =======================*/
+.section-1 {
+    background: url('../images/bg/section1_bg_header.png') no-repeat; 
+    background-size: 100%;
+    padding: 1.8981rem 0 3.4074rem 0;
+    box-sizing: border-box;
+}
+.header {
+    position: fixed;    
+    top: 0;
+    left: 0;
+    width: 10rem;
+    height: 1.8981rem;
+}
+.section-1 .header .title {
+    margin: 0.2778rem 0 0 0.6944rem;
+    background: url('../images/icon/section1_title.png') no-repeat;
+    width: 3.3611rem;
+    height: 1.3426rem;
+    background-size: 100%;
+}
+.content .p {
+    padding: 0 0.6481rem;
+    color: #fff;
+    font-size: 0.2778rem;
+    line-height: 0.3611rem;
+    margin: 0 0 0.4259rem 0;
+}
+.footer {
+    position: fixed;    
+    bottom: 0;
+    left: 0;
+    width: 10rem;
+    height: 3.4074rem;
+    background: #cca075;
+}

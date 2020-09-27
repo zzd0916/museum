@@ -154,6 +154,10 @@ img {
     height: 1.3426rem;
     background-size: 100%;
 }
+.content {
+    height: 12.6852rem;
+    padding: 0 0.2963rem;
+}
 .content .p {
     padding: 0 0.6481rem;
     color: #fff;
@@ -161,11 +165,56 @@ img {
     line-height: 0.3611rem;
     margin: 0 0 0.4259rem 0;
 }
+.content-chapter {
+    position: relative;
+    background: #fff;
+    border-radius: 16px;
+    height: 2.7778rem;
+}
+.content-chapter::before {
+    content:'';
+    display: block;
+    position: absolute;
+    left: 0.6481rem;
+    top: 0.2778rem;
+    width: 0.3241rem;
+    height: 0.3241rem;
+    border-radius: 50%;
+    background: #901d22;
+}
+.content-chapter::after {
+    content:'';
+    display: block;
+    position: absolute;
+    right: 0.6481rem;
+    top: 0.2778rem;
+    width: 0.3241rem;
+    height: 0.3241rem;
+    border-radius: 50%;
+    background: #901d22;
+}
+
+.content-chapter .bar {
+    display: block;
+    position: absolute;
+    top: -0.1111rem;
+    width: 0.1944rem;
+    height: 0.713rem;
+    background: url('../images/icon/content_bar.png') no-repeat;
+    background-size: 100%;
+    z-index: 2;
+}
+.bar.right {
+    right: 0.713rem;;
+}
+.bar.left {
+    left: 0.713rem;
+}
 .footer {
     position: fixed;    
     bottom: 0;
     left: 0;
     width: 10rem;
-    height: 3.4074rem;
+    height: 3.1759rem;
     background: #cca075;
 }

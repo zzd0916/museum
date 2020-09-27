@@ -175,3 +175,14 @@ input:focus{outline:none;}
     color: red;
     font-size: 0.4rem;
 }
+.img-100 {
+    width: 10rem;
+    height: 17.7778rem;
+}
+.title-1 {
+    text-align: center;
+    font-size: 0.3889rem;
+    color: #191919;
+    font-weight: bold;
+    padding: 0.8333rem 0 0.2963rem 0;
+}

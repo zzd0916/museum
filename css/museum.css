@@ -34,10 +34,14 @@
     border-radius: 0.0463rem;
 }
 .qr-box-c {
+    position: absolute;
+    left: 0.4167rem;
+    bottom: 0.1389rem;
     width: 1.4815rem;
-    height: 1.6111rem;
+    height: 1.8149rem;
     background: #fff;
     padding: 0.0926rem;
+    transform: scale(0.9);
 }
 .qr-box  canvas {
     width: 100%;
@@ -58,7 +62,7 @@
     text-align: center;
     font-size: 0.0926rem;
     color: #000;
-    margin-top: 0.0463rem;
+    transform: scale(0.8);
 }
 /* ================== cover 轮播 =======================*/
 .cover .content {
@@ -217,4 +221,26 @@ img {
     width: 10rem;
     height: 3.1759rem;
     background: #cca075;
+}
+.footer .select-bar {
+    width: 9.7222rem;
+    height: 0.9259rem;
+    border: 1px solid #a44b0b;
+    margin: 0 auto;
+    background: #d8b235;
+    padding: 2px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.footer .select-bar .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #e6a21f;
+    height: 100%;
+    font-size: 0.3519rem;
+    color: #36210c;
+    background: linear-gradient(#f1c746, #e9a632);
+    font-weight: bold;
+    box-sizing: border-box;
 }

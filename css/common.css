@@ -186,3 +186,10 @@ input:focus{outline:none;}
     font-weight: bold;
     padding: 0.8333rem 0 0.2963rem 0;
 }
+.ball {
+    width: 0.3148rem;
+    height: 0.3148rem;
+    background: url('../images/icon/ball.png') no-repeat;
+    background-size: 100%;
+    margin-right: 0.1852rem;
+}

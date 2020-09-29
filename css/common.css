@@ -11,7 +11,7 @@ body {
 .container {
     width: 10rem;
     height: 100%;
-    overflow: hidden
+    overflow: hidden;
 }
 .flex {
     display: flex;

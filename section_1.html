@@ -26,43 +26,49 @@
         </div>
         <div class="footer">
             <div class="select-bar">
-                <div class="title"> <span class="icon ball"></span> <span>闻令而动 精准施策</span></div>
+                <div class="title"> <span class="icon ball"></span> <b>闻令而动 精准施策</b></div>
             </div>
-            <div class="menu">
-                <div class="menu-box">
-                    <h4 class="section-name">第四单元</h4>
-                    <ul>
-                        <li class="menu-item">奋力夺取</li>
-                        <li class="menu-item">“双胜利”</li>
-                    </ul>
+            <div class="menu-wrapper">
+                <div class="qr-box-c">
+                    <div id="qrcode"></div>
+                    <div class="text">扫码观看</div>
                 </div>
-                <div class="menu-box">
-                    <h4 class="section-name">第三单元</h4>
-                    <ul>
-                        <li class="menu-item">同舟共济</li>
-                        <li class="menu-item">众志成城</li>
-                    </ul>
+                <div class="menu">
+                    <div class="menu-box">
+                        <h4 class="section-name">第四单元</h4>
+                        <ul>
+                            <li class="menu-item">奋力夺取</li>
+                            <li class="menu-item">“双胜利”</li>
+                        </ul>
+                    </div>
+                    <div class="menu-box">
+                        <h4 class="section-name">第三单元</h4>
+                        <ul>
+                            <li class="menu-item">同舟共济</li>
+                            <li class="menu-item">众志成城</li>
+                        </ul>
+                    </div>
+                    <div class="menu-box">
+                        <h4 class="section-name">第二单元</h4>
+                        <ul>
+                            <li class="menu-item">大美医者</li>
+                            <li class="menu-item">千里驰援</li>
+                            <li class="menu-item">医者仁心</li>
+                            <li class="menu-item">不辱使命</li>
+                        </ul>
+                    </div>
+                    <div class="menu-box active">
+                        <h4 class="section-name">第一单元</h4>
+                        <ul>
+                            <li class="menu-item active">闻令而动</li>
+                            <li class="menu-item active">精准实施</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="menu-box">
-                    <h4 class="section-name">第二单元</h4>
-                    <ul>
-                        <li class="menu-item">大美医者</li>
-                        <li class="menu-item active">千里驰援</li>
-                        <li class="menu-item active">医者仁心</li>
-                        <li class="menu-item active">不辱使命</li>
-                    </ul>
+                <div class="home-box" id='homeBox'>
+                    <span class="icon-home"></span>
+                    <a class="link-home" href="./index.html">首页</a>
                 </div>
-                <div class="menu-box">
-                    <h4 class="section-name">第一单元</h4>
-                    <ul>
-                        <li class="menu-item">闻令而动</li>
-                        <li class="menu-item">精准实施</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="qr-box-c">
-                <div id="qrcode"></div>
-                <div class="text">扫码观看</div>
             </div>
         </div>
     </div>
@@ -71,18 +77,5 @@
     <script type="text/javascript" src="./js/jquery.qrcode.min.js"></script>
     <script type="text/javascript" src="./js/utils.js"></script>
     <script type="text/javascript" src="./js/common.js"></script>
-
-    <script>
-        // 二维码
-        $('#qrcode').qrcode({
-            render:"canvas",//设置渲染方式 （有两种方式 table和canvas，默认是canvas）  
-            width: 200,//宽度
-            height: 200,//高度
-            correctLevel:0,//纠错等级  
-            text: utils.getHref(),//生成二维码的文本
-            // background  : "#f5f5f5",//背景颜色    
-            // foreground  : "#000000" //前景颜色  
-        });
-    </script>
 </body>
 </html>

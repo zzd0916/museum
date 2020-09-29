@@ -1,3 +1,5 @@
+console.log(window.location.href)
+
 if(window.location.href.indexOf('index.html') >-1 || window.location.href.indexOf('forword') >-1 ) {
 } else {
     $('#qrcode').qrcode({

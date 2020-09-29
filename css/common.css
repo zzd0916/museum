@@ -180,6 +180,15 @@ input:focus{outline:none;}
     width: 10rem;
     height: 17.7778rem;
 }
+.content-section-1 {
+    background: #fff;
+    padding: 0 0.1852rem;
+    margin-bottom: 0.1852rem;
+}
+.content-section-2 {
+    background: #cca075;
+    padding: 0 0.1852rem;
+}
 .title-1 {
     text-align: center;
     font-size: 0.3889rem;
@@ -187,7 +196,26 @@ input:focus{outline:none;}
     font-weight: bold;
     padding: 0.8333rem 0 0.2963rem 0;
 }
-
+.title-2 {
+    width: 7.2222rem;
+    text-align: center;
+    font-size: 0.3148rem;
+    color: #000;
+    font-weight: bold;
+    padding: 0.3704rem 0 0px 0;
+    margin: 0 auto 0.3704rem;
+    border-bottom: 0.0741rem solid #fae9cc;;
+}
+.title-3 {
+    width: 4.6297rem;
+    text-align: center;
+    font-size: 0.3148rem;
+    color: #fff;
+    font-weight: bold;
+    margin: 0 auto 0.3704rem;
+    padding: 0.3704rem 0 0px 0;
+    border-bottom: 0.0741rem solid #e4b263;;
+}
 .bar.right {
     right: 0.713rem;;
 }
@@ -301,3 +329,54 @@ input:focus{outline:none;}
     font-size: 0.2778rem;
     font-weight: bold;
 }
+.img-box-t1 {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.img-box-t1 .img-box-out{
+    width: 8.1481rem;
+    padding: 0.1667rem;
+    box-sizing: border-box;
+    background: #e6e6e6;
+    box-shadow: 0px 3px 0px 0 rgba(0, 0, 0, 0.3);    /*下边阴影  黄色*/
+    z-index: 9;
+}
+.img-box-t1 .img-box-out .img {
+    width: 100%;
+    max-height: 3.5185rem;
+}
+.img-box-t1 .img-box-out > p {
+    font-size: 0.1482rem;
+    color: #282828;
+    line-height: 0.2778rem;
+    margin: 0.1481rem 0 0 0;
+}
+.desk-bg {
+    width: 9.2593rem;
+    height: 0.4537rem;
+    z-index: 2;
+    position: relative;
+    top: -0.0463rem;
+}
+.img-box-t2 {
+    width: 4.4444rem;
+    background: #e6e6e6;
+}
+.img-box-t2 p {
+    font-size: 0.1389rem;
+    color: #000;
+    padding: 0.1389rem;
+}
+.img-box-t2 .img {
+    width: 100%;
+    max-height: 2.1667rem
+}
+.two-img-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 0.5556rem;
+}
+.

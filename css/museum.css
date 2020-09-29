@@ -145,7 +145,6 @@ img {
     background-size: 100%;
 }
 .content {
-    height: 12.6852rem;
     padding: 0 0.2963rem;
 }
 .content .p {
@@ -157,9 +156,11 @@ img {
 }
 .content-chapter {
     position: relative;
+    display: flex;
+    justify-content: center;
     background: #fff;
     border-radius: 16px;
-    height: 2.7778rem;
+    padding-bottom: 0.6296rem;
 }
 .content-chapter::before {
     content:'';

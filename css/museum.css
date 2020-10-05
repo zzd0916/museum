@@ -195,3 +195,82 @@ img {
     background-size: 100%;
     z-index: 2;
 }
+
+/* ================== section_1  =======================*/
+.time-line {
+    position: relative;
+    padding-top: 0.9259rem;
+}
+.time-month-wrapper {
+    position: absolute;
+    left: -0.1111rem;
+    top: 0;    
+    background: #5a88fe;
+    font-size: 0.3704rem;
+    color: #fff;
+    text-align: center;
+    width: 1.7593rem;
+    height: 0.6944rem;
+    line-height: 0.6944rem;
+    border-radius: 0  0.3519rem 0.3519rem 0;
+}
+.time-month-wrapper {
+
+}
+.time-block {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 0.6481rem;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+}
+.calendar {
+    border: 0.0278rem solid #c51321;
+    width: 60px;
+    height: 50px;
+    display: block;
+    margin: 0 0.6481rem 0 0.7407rem;
+}
+.calendar .day {
+    display: block;
+    font-size: 20px;
+    color: #c51321;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid #c51321;
+}
+.calendar .month {
+    display: block;
+    font-size: 0.1111rem;
+    color: #c51321;
+    text-align: center;
+}
+.time-content {
+    position: relative;
+    font-size: 16px;
+    color: #000;
+    line-height: 25px;
+    display: flex;
+    flex: 1;
+}
+.time-content::before {
+    width: 13px;
+    height: 13px;
+    display: block;
+    border-radius: 50%;
+    background: #eeb95b;
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 5px;
+}
+.time-content::after {
+    width: 4px;
+    height: 100%;
+    display: block;
+    background: #eeb95b;
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 20px;
+}

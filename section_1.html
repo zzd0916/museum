@@ -51,6 +51,20 @@
                     <div class="content-section-3">
                         <h1 class="title-3" style="color: #000;">四川新冠肺炎疫情防控<b style="color: #e91616">时间轴</b></h1>
                     </div>
+                    <div class="content-section-4" id="timeLine">
+                        <!-- <div class="time-line">
+                            <div class="time-month-wrapper">1月</div>
+                            <div class="time-block">
+                                <div class="calendar">
+                                    <span class="day">16</span>
+                                    <span class="month">1月</span>
+                                </div>
+                                <p class="time-content">
+                                    发现首例疑似病例，省委、省政府立即作出部署，建立联防联控工作机制。
+                                </p>
+                            </div> -->
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -107,5 +121,100 @@
     <script type="text/javascript" src="./js/jquery.qrcode.min.js"></script>
     <script type="text/javascript" src="./js/utils.js"></script>
     <script type="text/javascript" src="./js/common.js"></script>
+    <script>
+        var timeData = {
+            '1月': [
+                {
+                    day: 16,
+                    text: '发现首例疑似病例，省委、省政府立即作出部署，建立联防联控工作机制。'
+                },
+                {
+                    day: 20,
+                    text: '省委书记彭清华紧急主持召开市（州）和省直部门主要负责人专题会议，就贯彻落实习近平总书记重要指示和李克强总理批示精神、做好我省疫情防控工作进行安排部署。'
+                },
+                {
+                    day: 24,
+                    text: '全省启动突发公共卫生事件Ⅰ级响应机制。'
+                },
+                {
+                    day: 26,
+                    text: '省委成立应对疫情工作领导小组，省政府成立应急指挥部并下设13个工作组（专班）。'
+                },
+                {
+                    day: 27,
+                    text: '调整全省大中小学幼儿园春季学期开学时间。'
+                },
+                {
+                    day: 28,
+                    text: '停止春节大型活动和聚餐、关停景区景点和公共文化场所。'
+                },
+                {
+                    day: 29,
+                    text: '首例新冠肺炎患者治愈出院。'
+                }
+            ], 
+            '2月': [
+                {
+                    day: 3,
+                    text: '省委、省政府决定，支持企业在确保员工安全健康前提下可灵活安排、自行决定复工复产时间。'
+                },
+                {
+                    day: 4,
+                    text: '率先实施差异化防控策略，统筹推进疫情防控和社会经济发展。实施分区分级防控，出台精准防控100条措施。'
+                },
+                {
+                    day: 10,
+                    text: '省人大常委会及时表决通过《关于依法做好当前新型冠状病毒肺炎疫情防控工作的决定》，把疫情防控工作全面纳入法制化轨道。'
+                },
+                {
+                    day: 13,
+                    text: '出台《四川省应对新型冠状病毒肺炎疫情分区分类防控工作指南》。'
+                },
+                {
+                    day: 17,
+                    text: '四川外出务工人员健康申报和查询系统上线，通过线上线下双通道办理健康证，率先实现省内用工单位健康证明互认。'
+                },
+                {
+                    day: 26,
+                    text: '全省突发公共卫生事件应急响应级别降为Ⅱ级。'
+                }
+            ],
+            '3月': [
+                {
+                    day: 11,
+                    text: '全省决战决胜脱贫攻坚工作推进会议召开。'
+                },
+                {
+                    day: 18,
+                    text: '183个县（市、区）保持低风险状态，省内疫情传播基本阻断。'
+                },
+                {
+                    day: 25,
+                    text: '全省突发公共卫生事件应急响应级别降为Ⅲ级。'
+                }
+            ]
+            
+        };
+
+        let htmlstr = '';
+        for(let i in timeData) {
+            let d1 = timeData[i];
+            htmlstr +='<div class="time-line">'
+            d1.forEach(c => {
+                htmlstr += `<div class="time-month-wrapper">${i}</div>
+                            <div class="time-block">
+                                <div class="calendar">
+                                    <span class="day">${c.day}</span>
+                                    <span class="month">${i}</span>
+                                </div>
+                                <p class="time-content">${c.text}</p>
+                            </div>` 
+            });
+
+            htmlstr +='</div>'
+        }
+
+        $('#timeLine').html(htmlstr)
+    </script>
 </body>
 </html>

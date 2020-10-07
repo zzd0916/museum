@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" style="background: #11b3b5;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>大美医者 负重逆行</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/museum.css">
+    <script src="./js/flexible.js"></script>
+</head>
+<body>
+    <div class="container section-2 section-2-3" >
+        <div class="header section2 section2-3" id="header">
+            <div class="title"></div>
+        </div>
+        <div class="content" id="content">
+            <!-- <p class="p p2">始终把人民群众生命安全和身体健康放在第一位。紧跟疫情形势变化，四川在发现输入观察病例之初，即在第一时间统筹布局优势医疗救治力量。全省70多万医务工作者在“最美逆行”中守望相助，竭尽所能。四川先后派出1463人的精锐力量驰援荆楚大地，派遣2批抗疫医疗专家组积极协助国际社会战胜疫情。逆行无言，大爱无声，他们，是战疫中最美的逆行风景。</p> -->
+            <div class="content-chapter">
+                <span class="bar left"></span>
+                <span class="bar right"></span>
+                <div class="main-content">
+                    <h1 class="title-1">
+                        <span class="group-name bg-green">第三组</span>
+                        <img class='title-radius' src='./images/icon/title_section_2_3.png' alt="" />
+                    </h1>
+                    <p class="p">因为有你，人间温暖。为守护人民生命安全，医护工作者始终坚守一线。面对危险，无所退让；面对困难，迎难而上；面对家人，心存愧疚。医护、医护与病患、医护与家人携手筑起一道道爱的堤坝，谱写了一曲曲大爱之歌。</p>
+                    <div class="secton_2_2_top-img">
+                        <div class="img-box">
+                            <img src="./images/img/section2/section_2_3_img1.jpg" alt="">
+                            <p>剪掉长发轻装上阵</p>
+                        </div>
+                        <div class="img-box">
+                            <img src="./images/img/section2/section_2_3_img2.jpg" alt="">
+                            <p>志愿请战</p>
+                        </div>
+                        <div class="img-box">
+                            <img src="./images/img/section2/section_2_3_img3.jpg" alt="">
+                            <p>出征道别</p>
+                        </div>
+                    </div>
+                    <div class="secton_2_3_bottom-img">
+                        <div class="left-box">
+                            <img src="./images/img/section2/section_2_3_img4.jpg" alt="">
+                        </div>
+                        <div class="right-box">
+                            <img src="./images/img/section2/section_2_3_img5.jpg" alt="">
+                            <img src="./images/img/section2/section_2_3_img6.jpg" alt="">
+                        </div>
+                    </div>
+                    <img class="secton_2_3_img7" src="./images/img/section2/section_2_3_img7.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="footer" id="footer">
+            <div class="select-bar">
+                <div class="title"> <span class="icon ball"></span> <b>医者仁心 请选择分组</b></div>
+            </div>
+            <div class="menu-wrapper">
+                <div class="qr-box-c">
+                    <div id="qrcode"></div>
+                    <div class="text">扫码观看</div>
+                </div>
+                <div class="menu">
+                    <div class="menu-box">
+                        <h4 class="section-name">第四单元</h4>
+                        <ul>
+                            <li class="menu-item">奋力夺取</li>
+                            <li class="menu-item">“双胜利”</li>
+                        </ul>
+                    </div>
+                    <div class="menu-box">
+                        <h4 class="section-name">第三单元</h4>
+                        <ul>
+                            <li class="menu-item">同舟共济</li>
+                            <li class="menu-item">众志成城</li>
+                        </ul>
+                    </div>
+                    <div class="menu-box">
+                        <h4 class="section-name">第二单元</h4>
+                        <ul>
+                            <li class="menu-item">大美医者</li>
+                            <li class="menu-item">千里驰援</li>
+                            <li class="menu-item">医者仁心</li>
+                            <li class="menu-item">不辱使命</li>
+                        </ul>
+                    </div>
+                    <div class="menu-box active">
+                        <h4 class="section-name">第一单元</h4>
+                        <ul>
+                            <li class="menu-item active">闻令而动</li>
+                            <li class="menu-item active">精准实施</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="home-box" id='homeBox'>
+                    <span class="icon-home"></span>
+                    <a class="link-home" href="./index.html">首页</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./js/jquery/jquery.js"></script>
+    <script type="text/javascript" src="./js/jquery.qrcode.min.js"></script>
+    <script type="text/javascript" src="./js/utils.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+    <script type="text/javascript" src="./js/LoopSlider.js"></script>
+    <script type="text/javascript" src="./js/LoopSlider.js"></script>
+
+    <script>
+         // 轮播
+         LoopSlider.init({
+            el: ".slide", //选择器
+            navigator: {
+                //前进后退按钮
+                prevEl: ".prev",
+                nextEl: ".next"
+            },
+            easing: "ease", //动画效果cubic-bezier(0.985, -0.060, 0.000, 1.320)
+            duration: 300, //过渡时间，默认为3000ms,
+            autoplay: 3000, //boolean 和 number 设置为true 默认延时为3s,如果设置为1000，延时为1s
+        })
+
+    </script>
+   
+</body>
+</html>

@@ -35,8 +35,8 @@ var LoopSlider = {
 				float: "left"
 			});
 
-			$(obj.el).append("<div class='" + obj.navigator.nextEl.replace(".", "") + "'>  </div>");
-			$(obj.el).append("<div class='" + obj.navigator.prevEl.replace(".", "") + "'>  </div>")
+			$(obj.el).append("<div class='" + obj.navigator.nextEl.replace(".", "") + "'> > </div>");
+			$(obj.el).append("<div class='" + obj.navigator.prevEl.replace(".", "") + "'> < </div>")
 			$(obj.el).append("<div class='points'></div>");
 			for (let i = 0; i < imgs.length; i++) {
 				if (i == 0) {

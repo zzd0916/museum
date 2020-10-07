@@ -229,6 +229,7 @@ input:focus{outline:none;}
     width: 10rem;
     height: 3.1759rem;
     background: #cca075;
+    z-index: 9;
 }
 .footer .select-bar {
     width: 9.7222rem;
@@ -281,7 +282,7 @@ input:focus{outline:none;}
     font-size: 0.3148rem;
     color: #522b04;
     font-weight: bold;
-    margin: 0.3519rem 0 0.0463rem 0;
+    margin: 0.2315rem 0 0.0463rem 0;
 }
 .menu-item {
     color: #57300a;
@@ -341,7 +342,7 @@ input:focus{outline:none;}
     box-sizing: border-box;
     background: #e6e6e6;
     box-shadow: 0px 3px 0px 0 rgba(0, 0, 0, 0.3);    /*下边阴影  黄色*/
-    z-index: 9;
+    z-index: 8;
 }
 .img-box-t1 .img-box-out .img {
     width: 100%;
@@ -378,4 +379,92 @@ input:focus{outline:none;}
     flex-direction: row;
     justify-content: space-around;
     margin-top: 0.5556rem;
+}
+.title-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.title-1 .title-radius {
+    width: 2.8981rem;
+}
+.group-name {
+    font-size: 0.1852rem;
+    color: #fff;
+    display: inline-block;
+    background: #bb0417;
+    height: 0.4259rem;
+    line-height: 0.4259rem;
+    width: 1.3519rem;
+    text-align: center;
+    margin-right: 0.1852rem;
+}
+.img-gorup-wrapper {
+    position: relative;
+    width: 8.6667rem;
+    margin: 0 auto 0.2315rem;
+}
+.img-gorup-wrapper img {
+    width: 8.6389rem;
+    align-items: center;
+    display: block;
+}
+.img-gorup-wrapper .img-box {
+    position: relative;
+}
+.img-gorup-wrapper .img-box .label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-size: 0.2222rem;
+    padding: 0.0926rem 0.1852rem;
+}
+.img-gorup-wrapper .info {
+    color: #fff;
+    background: #5073a8;
+    font-size: 0.1852rem;
+    padding: 0.1852rem;
+    line-height: 0.3704rem;
+    margin: 0 ;
+    font-weight: normal;
+}
+.data-img {
+    width: 8.6389rem;
+    height: 3.537rem;
+}
+.main-content {
+    width: 100%;
+    overflow-x: hidden;
+}
+.content .main-content .p {
+    width: 8.3333rem;
+    margin: 0 auto;
+    font-size: 0.1667rem;
+    line-height: 0.3704rem;
+    color: #202020;
+}
+.bg-green {
+    background: #03a7a9;
+}
+.secton_2_3_bottom-img {
+    width: 6.9444rem;
+    margin: 0.1852rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.secton_2_3_bottom-img .left-box {
+    width: 4.3148rem;
+    height: 6.9445rem;
+}
+.secton_2_3_bottom-img .right-box {
+    width: 2.3889rem;
+}
+.secton_2_3_bottom-img .right-box img {
+    height: 3.3333rem;
+    display: block;
+    margin-bottom: 0.2315rem;
 }

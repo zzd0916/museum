@@ -1,7 +1,7 @@
 console.log(window.location.href)
 
-if(window.location.href.indexOf('index.html') >-1 || window.location.href.indexOf('forword') >-1 ) {
-} else {
+if(window.location.href.indexOf('section') >-1) {
+
     $('#qrcode').qrcode({
         render:"canvas",//设置渲染方式 （有两种方式 table和canvas，默认是canvas）  
         width: 200,//宽度
@@ -12,3 +12,5 @@ if(window.location.href.indexOf('index.html') >-1 || window.location.href.indexO
         // foreground  : "#000000" //前景颜色  
     });
 }
+
+$('#content').height($(window).height() - $('#header').height()- $('#footer').height() - 10);

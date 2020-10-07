@@ -1,6 +1,6 @@
-console.log(window.location.href)
 
-if(window.location.href.indexOf('section') >-1) {
+let href = window.location.href;
+if(href.indexOf('section') >-1) {
 
     $('#qrcode').qrcode({
         render:"canvas",//设置渲染方式 （有两种方式 table和canvas，默认是canvas）  
@@ -13,4 +13,9 @@ if(window.location.href.indexOf('section') >-1) {
     });
 }
 
-$('#content').height($(window).height() - $('#header').height()- $('#footer').height() - 10);
+let WH = $(window).height();
+let HH = $('#header').height()
+let FH = $('#footer').height();
+$('#content').height(WH - HH - FH - 10);
+$("#footer .title").eq(0).on('click', function() {
+})

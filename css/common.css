@@ -530,3 +530,27 @@ input:focus{outline:none;}
     cursor: pointer;
     text-decoration: none;
 }
+.page-group {
+    position: fixed;
+    width: 0.6111rem;
+    height: 100%;
+    right: 15px;
+    top: 40%;
+    z-index: 9;
+}
+.page-group button {
+    display: block;
+    font-size: 0;
+}
+.page-group .page-up {
+    width: 0.6111rem;
+    height: 0.7778rem;
+    background: url(../images/icon/page-up.png) no-repeat;
+    background-size: 100%;
+}
+.page-group .page-down {
+    width: 0.6111rem;
+    height: 0.7593rem;
+    background: url(../images/icon/page-down.png) no-repeat;
+    background-size: 100%;
+}

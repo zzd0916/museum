@@ -16,7 +16,8 @@ if(href.indexOf('section') >-1) {
 let WH = $(window).height();
 let HH = $('#header').height()
 let FH = $('#footer').height();
-$('#content').height(WH - HH - FH - 10);
+let CH = WH - HH - FH - 10
+$('#content').height(CH);
 $("#footer .title").eq(0).on('click', function() {
 })
 
@@ -65,6 +66,30 @@ $('#sectionSelect4').on('click', function() {
     $('body').append(section4html)
 })
 
+// 移除弹窗
 function removeSelf () {
     $('.mask').remove();
+}
+
+let pageHtml = ` <div class="page-group">
+                    <button class="page-up" onclick="scropUp()" > </button>
+                    <button class="page-down" onclick="scropDown()" > </button>
+                </div>`
+
+// 增加全局翻页
+$('#content').append(pageHtml);
+
+
+/**
+ * 向上翻页
+*/
+function scropUp() {
+    $('#content').scrollTop($('#content').scrollTop() - CH)
+}
+
+/**
+ * 向下翻页
+*/
+function scropDown() {
+    $('#content').scrollTop($('#content').scrollTop() + CH)
 }

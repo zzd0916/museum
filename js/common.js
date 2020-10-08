@@ -13,10 +13,18 @@ if(href.indexOf('section') >-1) {
     });
 }
 
+
+// 如果設備寬度大於等於 1080
+if($(window).width() >= '1080') {
+    let htmlDom=document.getElementsByTagName('html')[0];
+    htmlDom.style.fontSize= '108px';
+}
+
 let WH = $(window).height();
 let HH = $('#header').height()
 let FH = $('#footer').height();
-let CH = WH - HH - FH - 10
+let CH = WH - HH - FH - 10;
+
 $('#content').height(CH);
 $("#footer .title").eq(0).on('click', function() {
 })
@@ -31,9 +39,9 @@ let section1html = `<div class="mask" onclick="removeSelf()">
 let section2html = `<div class="mask" onclick="removeSelf()">
                         <div class="pop-wrapper">
                             <a class="pop-btn" href="./section_2_1.html">第一组 科学防治</a>
-                            <a class="pop-btn" href="./section_2_2.html">第二组 千里驰骋</a>
+                            <a class="pop-btn" href="./section_2_2.html">第二组 千里驰援</a>
                             <a class="pop-btn" href="./section_2_3.html">第三组 医者仁心</a>
-                            <a class="pop-btn" href="./section_2_4.html">第三组 不辱使命</a>
+                            <a class="pop-btn" href="./section_2_4.html">第四组 不辱使命</a>
                         </div>
                     </div>`;
 
@@ -93,3 +101,5 @@ function scropUp() {
 function scropDown() {
     $('#content').scrollTop($('#content').scrollTop() + CH)
 }
+
+

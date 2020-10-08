@@ -458,6 +458,7 @@ input:focus{outline:none;}
     line-height: 0.3704rem;
     color: #202020;
     padding-bottom: 0.1852rem;
+    text-indent: 0.6019rem;
 }
 .bg-green {
     background: #03a7a9;

@@ -19,3 +19,52 @@ let FH = $('#footer').height();
 $('#content').height(WH - HH - FH - 10);
 $("#footer .title").eq(0).on('click', function() {
 })
+
+// 分组选择器
+let section1html = `<div class="mask" onclick="removeSelf()">
+                        <div class="pop-wrapper">
+                            <a class="pop-btn" href="./section_1.html">闻令而动 精准实施</a>
+                        </div>
+                    </div>`;
+
+let section2html = `<div class="mask" onclick="removeSelf()">
+                        <div class="pop-wrapper">
+                            <a class="pop-btn" href="./section_2_1.html">第一组 科学防治</a>
+                            <a class="pop-btn" href="./section_2_2.html">第二组 千里驰骋</a>
+                            <a class="pop-btn" href="./section_2_3.html">第三组 医者仁心</a>
+                            <a class="pop-btn" href="./section_2_4.html">第三组 不辱使命</a>
+                        </div>
+                    </div>`;
+
+let section3html =   `<div class="mask" onclick="removeSelf()">
+                        <div class="pop-wrapper">
+                            <a class="pop-btn" href="./section_3_1.html">第一组 基层堡垒</a>
+                            <a class="pop-btn" href="./section_3_2.html">第二组 联防联控</a>
+                            <a class="pop-btn" href="./section_3_3.html">第三组 志愿服务</a>
+                        </div>
+                    </div>`;
+
+let section4html =  `<div class="mask" onclick="removeSelf()">
+                        <div class="pop-wrapper">
+                            <a class="pop-btn" href="./section_4_1.html">第一组 复工复产</a>
+                            <a class="pop-btn" href="./section_4_2.html">第二组 复业复市</a>
+                            <a class="pop-btn" href="./section_4_3.html">第三组 返校复课</a>
+                        </div>
+                    </div>`;
+
+$('#sectionSelect1').on('click', function() {
+    $('body').append(section1html)
+})
+$('#sectionSelect2').on('click', function() {
+    $('body').append(section2html)
+})
+$('#sectionSelect3').on('click', function() {
+    $('body').append(section3html)
+})
+$('#sectionSelect4').on('click', function() {
+    $('body').append(section4html)
+})
+
+function removeSelf () {
+    $('.mask').remove();
+}

@@ -34,9 +34,16 @@ var LoopSlider = {
 				height: "100%",
 				float: "left"
 			});
+			
+			if(obj.showOpera) {
+				$(obj.el).append("<div class='" + obj.navigator.nextEl.replace(".", "") + "'> > </div>");
+				$(obj.el).append("<div class='" + obj.navigator.prevEl.replace(".", "") + "'> < </div>")
+			} else {
+				$(obj.el).append("<div >  </div>");
+				$(obj.el).append("<div >  </div>")
+			}
 
-			$(obj.el).append("<div class='" + obj.navigator.nextEl.replace(".", "") + "'> > </div>");
-			$(obj.el).append("<div class='" + obj.navigator.prevEl.replace(".", "") + "'> < </div>")
+		
 			$(obj.el).append("<div class='points'></div>");
 			for (let i = 0; i < imgs.length; i++) {
 				if (i == 0) {

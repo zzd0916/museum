@@ -263,11 +263,10 @@ input:focus{outline:none;}
     overflow: hidden;
 }
 .footer .menu {
-    width: 6.2963rem;
+    width: 6.0185rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 auto;
     height: 100%;
 }
 .menu .menu-box {
@@ -323,12 +322,21 @@ input:focus{outline:none;}
     height: 0.6296rem;
     background: url('../images/icon/home.png') no-repeat;
     background-size: 100%;
-    margin-bottom: 0.1481rem;
+    margin: 0 auto 0.1389rem;
+}
+.icon-end {
+    display: block;
+    width: 0.4444rem;
+    height: 0.5833rem;
+    background: url('../images/icon/end.png') no-repeat;
+    background-size: 100%;
+    margin: 0 auto 0.1111rem;
 }
 .link-home {
-    color: #000;
+    color: #522b04;
     font-size: 0.2778rem;
     font-weight: bold;
+    text-decoration: none;
 }
 .img-box-t1 {
     position: relative;
@@ -458,7 +466,7 @@ input:focus{outline:none;}
     line-height: 0.3704rem;
     color: #202020;
     padding-bottom: 0.1852rem;
-    text-indent: 0.6019rem;
+    text-indent: 0.5019rem;
 }
 .bg-green {
     background: #03a7a9;

@@ -429,7 +429,7 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 0.2778rem;
+    padding: 0 0.55rem;
     margin-top: 0.3704rem;
 }
 .min-gap {
@@ -439,7 +439,7 @@ img {
     padding: 0 0.3704rem;
 }
 .img-group-2 .left-box {
-    width: 3.5463rem;
+    width: 3.8rem;
 }
 .img-group-2 .left-box .img-box {
     margin-bottom: 0.5093rem;
@@ -454,7 +454,7 @@ img {
     margin-bottom: 0.5556rem;
 }
 .img-group-2 .right-box {
-    width: 3.7222rem;
+    width: 3.9222rem;
 }
 .img-group-2 .label {
     padding: 0.1389rem 0.1389rem;
@@ -607,10 +607,10 @@ img {
     justify-content: space-around;
 }
 .secton_2_2_bottom-img .left-box {
-    width: 3.8148rem;
+    width: 4rem;
 }
 .secton_2_2_bottom-img .right-box {
-    width: 3.8148rem;
+    width: 4.5rem;
 }
 .secton_2_2_bottom-img .img-box {
     margin-bottom: 0.1852rem;

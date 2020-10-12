@@ -451,9 +451,14 @@ input:focus{outline:none;}
     margin: 0 ;
     font-weight: normal;
 }
+.img-box {
+    position: relative;
+}
 .data-img {
     width: 8.6389rem;
-    height: 3.537rem;
+    height: 5.5556rem;
+    margin: 0.2778rem auto 0;
+    display: block;
 }
 .main-content {
     width: 100%;

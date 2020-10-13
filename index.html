@@ -47,14 +47,13 @@
             duration: 300, //过渡时间，默认为3000ms,
             autoplay: 3000, //boolean 和 number 设置为true 默认延时为3s,如果设置为1000，延时为1s
         })
-
         // 二维码
         $('#qrcode').qrcode({
             render:"canvas",//设置渲染方式 （有两种方式 table和canvas，默认是canvas）  
             width: 200,//宽度
             height: 200,//高度
             correctLevel:0,//纠错等级  
-            text: utils.getUrl(),//生成二维码的文本
+            text: utils.BASEURL,//生成二维码的文本
             // background  : "#f5f5f5",//背景颜色    
             // foreground  : "#000000" //前景颜色  
         });

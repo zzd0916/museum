@@ -13,9 +13,8 @@ if(href.indexOf('section') >-1) {
     });
 }
 
-
 // 如果設備寬度大於等於 1080
-if($(window).width() >= '1070') {
+if($(window).width() >= 1070) {
     let htmlDom=document.getElementsByTagName('html')[0];
     htmlDom.style.fontSize= '108px';
 }

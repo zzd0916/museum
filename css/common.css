@@ -373,6 +373,8 @@ input:focus{outline:none;}
 }
 .img-box-t2 {
     width: 4.4444rem;
+}
+.img-box-t2 p {
     background: #e6e6e6;
 }
 .img-box-t2.t4 {

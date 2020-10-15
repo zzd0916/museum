@@ -316,7 +316,9 @@ input:focus{outline:none;}
     margin-top: 0.0463rem;
 }
 .home-box {
-    text-align: center;
+    text-align: center;    
+    display: flex;
+    flex-direction: column;
 }
 .icon-home {
     display: block;
@@ -324,7 +326,7 @@ input:focus{outline:none;}
     height: 0.6296rem;
     background: url('../images/icon/home.png') no-repeat;
     background-size: 100%;
-    margin: 0 auto 0.1389rem;
+    margin: 0 auto 0.1111rem;
 }
 .icon-end {
     display: block;
